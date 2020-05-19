@@ -4,8 +4,10 @@
 }
 
 #aboutContents {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr) 1fr;
   text-align: center;
-  padding: 5%;
+  padding: 2%;
 }
 
 #aboutTitle {
@@ -16,8 +18,19 @@
   font-family: "Roboto Light";
   font-size: 1.2em;
   text-align: justify;
-  width: 40%;
+  width: 80%;
   padding: 1%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#aboutPhotoContainer {
+  display: flex;
+  align-items: center;
+}
+
+#aboutPhoto {
+  height: 50vh;
+  z-index: 3;
+  margin: auto;
 }
