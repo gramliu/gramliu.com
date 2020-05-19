@@ -1,11 +1,23 @@
-html, body {
-    height: 100%;
+#aboutText {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-#coverPhoto {
-    background-image: url("../images/iGEN.jpg");
-    height:50%;
-    width: 100%;
-    background-repeat: no-repeat;
-    object-fit: cover;
+#aboutContents {
+  text-align: center;
+  padding: 5%;
+}
+
+#aboutTitle {
+  font-family: "Questrial";
+}
+
+#aboutParagraph {
+  font-family: "Roboto Light";
+  font-size: 1.2em;
+  text-align: justify;
+  width: 40%;
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
 }
