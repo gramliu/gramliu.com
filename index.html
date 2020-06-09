@@ -14,14 +14,20 @@
     <link
       rel="stylesheet"
       type="text/css"
+      media="screen and (min-device-width: 480px)"
+      href="assets/css/index.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
       media="screen and (max-device-width: 480px)"
-      href="assets/css/index_mobile.css"
+      href="assets/css/home_mobile.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen and (min-device-width: 480px)"
-      href="assets/css/index.css"
+      href="assets/css/home.css"
     />
     <link
       rel="stylesheet"
@@ -34,6 +40,18 @@
       type="text/css"
       media="screen and (min-device-width: 480px)"
       href="assets/css/about.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (max-device-width: 480px)"
+      href="assets/css/portfolio_mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen and (min-device-width: 480px)"
+      href="assets/css/portfolio.css"
     />
     <script src="assets/js/jquery.js"></script>
     <script
@@ -55,7 +73,7 @@
     <div id="home">
       <div id="box" class="slideUp">
         <img src="assets/images/homePhoto.jpg" id="portrait" />
-        <div id="card">
+        <div id="indexCard">
           <div id="cardhead">
             <p id="cardHeader">I'm <span id="cardName">Gram Liu</span></p>
             <p id="cardDesc">Engineer. Developer. Geek.</p>
@@ -124,33 +142,26 @@
             <a href="https://www.cmu.edu/about/today-we-work/index.html">
               my heart is in the work</a
             >. I'm the Director of Technology for
-            <a href="https://scottylabs.org/">
-              ScottyLabs</a>, a club devoted to cultivating student passion for
-            technology; and Events Coordinator for
-            <a href="http://www.cmusase.org/">CMU SASE</a>,
-            a club that gets students in touch with their Asian heritage
-            while developing professional skills. This summer, I'm
-            doing research with the
-            <a href="https://privacystreams.github.io/">PrivacyStreams</a>
-            project led by Professor Jason Hong.
+            <a href="https://scottylabs.org/"> ScottyLabs</a>, a club that
+            cultivates student passion for tehnology; and Events Coordinator
+            for <a href="http://www.cmusase.org/">CMU SASE</a>, a club that
+            helps students develop professional skills while celebrating Asian
+            culture and heritage. This summer, I'm doing research at the 
+            CMU Chimps Lab led by Professor Jason Hong to develop a system that
+            secures and anonymizes the personal information collected by
+            IoT sensors.
             <br />
             <br />
             Off campus, I work with different initiatives to develop technology
             for social good. I'm currently working with
             <a href="https://dashboardphilippines.com/">Dashboard Philippines</a
             >, to centralize information and relief distribution in the
-            Philippines for the COVID-19 pandemic. Check out my 
-            <a
-              href="/resume"
-              target="_blank"
-            >
+            Philippines for the COVID-19 pandemic. Check out my
+            <a href="/resume" target="_blank">
               resume
             </a>
             or my
-            <a
-              href="https://www.linkedin.com/in/gdliu/"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/gdliu/" target="_blank">
               LinkedIn profile
             </a>
             for more info.
@@ -159,7 +170,38 @@
       </div>
     </div>
     <div id="portfolio">
-
+      <div id="portfolioHeading">
+        <h1>Selected Projects</h1>
+      </div>
+      <div id="portfolioProjects">
+        <div class="card w-75">
+          <div class="card-body">
+            <h5 class="card-title">Dashboard Philippines</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet 
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+            </p>
+          </div>
+        </div>
+        <div class="card w-75">
+          <div class="card-body">
+            <h5 class="card-title">PrivacyStreams</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="card w-75">
+          <div class="card-body">
+            <h5 class="card-title">Project C</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer>
+      &copy; Gram Liu 2020
+    </footer>
   </body>
 </html>
