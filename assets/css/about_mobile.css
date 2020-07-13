@@ -1,4 +1,6 @@
 #aboutText {
+  margin-top: 1em;
+  margin-bottom: 1em;
   display: grid;
   grid-template-columns: 1fr;
 }
