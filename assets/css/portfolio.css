@@ -19,6 +19,15 @@
   max-width: 20%;
 }
 
+.project-date {
+  text-align: center;
+  font-family: "Roboto";
+}
+
+.card-deck {
+  margin-top: 2em;
+}
+
 .card-title {
   text-align: center;
   font-family: "Proxima Nova";
