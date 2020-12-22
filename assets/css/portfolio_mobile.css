@@ -10,23 +10,33 @@
   padding-left: 2em;
 }
 
-#portfolioProjects {
-  display: flex;
-  justify-content: space-evenly;
+.project-date {
   text-align: center;
+  font-family: "Roboto";
+}
+
+.card-deck {
+  margin-top: 2em;
 }
 
 .card-title {
+  text-align: center;
   font-family: "Proxima Nova";
 }
 
 .card-subtitle {
+  text-align: center;
   font-family: "Roboto Light";
 }
+
 
 .card-text {
   text-align: left;
   font-family: "Roboto Light";
+}
+
+.card-footer {
+  text-align: center;
 }
 
 .card-link {
