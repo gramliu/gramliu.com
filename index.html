@@ -119,6 +119,26 @@
         </div>
       </div>
     </div>
+    <script>
+      document.onmousemove = handleMouseMove;
+      function handleMouseMove(event) {
+        const height = window.innerHeight;
+        const width = window.innerWidth;
+        // Creates angles of (-20, -20) (left, bottom) and (20, 20) (right, top)
+        const yAxisDegree = (event.pageX / width) * 40 - 20;
+        const xAxisDegree = (event.pageY / height) * -1 * 40 + 20;
+        target.style.transform = `rotateY(${yAxisDegree}deg) rotateX(${xAxisDegree}deg)`;
+        // Set the sheen position
+        setSheenPosition(event.pageX / width, event.pageY / width);
+      }
+      function setSheenPosition(xRatio, yRatio) {
+        // This creates a "distance" up to 400px each direction to offset the sheen
+        const xOffset = 1 - (xRatio - 0.5) * 800;
+        const yOffset = 1 - (yRatio - 0.5) * 800;
+        target.style.setProperty("--sheenX", `${xOffset}px`);
+        target.style.setProperty("--sheenY", `${yOffset}px`);
+      }
+    </script>
     <div id="about">
       <div id="aboutContents">
         <div id="aboutPhotoContainer">
@@ -414,7 +434,7 @@
                 SDK/NDK.
               </p>
             </div>
-            <h6 class="project-date">May 2018</h6>
+            <h6 class="project-date">November 2018</h6>
             <div class="card-footer">
               <a
                 href="https://github.com/gramliu/Unawa"
@@ -490,7 +510,7 @@
                   >Hack4PH</a
                 >
                 Hack to Play and Best Use of Technology. Suroy (Cebuano word for
-                "explore") is an Android app to help commuters track public
+                "explore") is an Android app that helps commuters track public
                 utility vehicles in the Philippines while promoting visibility
                 of small businesses along their commute. Created using Google
                 Firebase, Maps, and Arduino.
@@ -591,16 +611,92 @@
                   >InnoBox Project Philippines</a
                 >. Daloy (Filipino word for "flow" 🌊) is a drone and
                 submarine-based research tool that remotely demonstrates
-                real-time changes in environmental parameters such as air
-                pressure, water pressure, and water temperature for educational
-                and research purposes. Built with Zigbee Radio, Arduino,
-                Raspberry Pi, and a variety of environmental sensors.
+                real-time changes in environmental parameters like air and water
+                pressure for educational or research purposes. Built with Zigbee
+                Radio, Arduino, Raspberry Pi, and a variety of environmental
+                sensors.
               </p>
             </div>
             <h6 class="project-date">October 2018</h6>
             <div class="card-footer">
               <a
                 href="https://github.com/gramliu/Daloy"
+                class="card-link"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+          <!-- GripAid -->
+          <div class="card project">
+            <div class="card-img">
+              <div
+                id="carousel-gripaid"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      class="d-block w-100"
+                      src="assets/images/projects/gripaid/display.jpg"
+                      alt="Gripaid biometrics display"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      class="d-block w-100"
+                      src="assets/images/projects/gripaid/full.jpg"
+                      alt="Full gripaid exoskeleton"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carousel-gripaid"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carousel-gripaid"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">✊ GripAid</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Grip Exoskeleton with Biometrics Display
+              </h6>
+              <p class="card-text">
+                Regional Representative for the 2018 Philippine National
+                Inventions Expo. GripAid is a wearable grip exoskeleton that
+                assists those with weak grip strength, such as those with
+                arthritis or other neurodegenerative diseases. It also displays
+                heart pulse biometrics, as this demographic is often at high
+                risk of cardiovascular diseases. Frame was 3D printed, mechanism
+                powered by Arduino.
+              </p>
+            </div>
+            <h6 class="project-date">August 2018</h6>
+            <div class="card-footer">
+              <a
+                href="https://github.com/gramliu/GripAid"
                 class="card-link"
                 target="_blank"
               >
